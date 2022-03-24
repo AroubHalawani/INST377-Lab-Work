@@ -30,7 +30,6 @@
     display: flex;
     width: 225px;
     justify-content: space-between;
-    
 }
 .Main-page{
     margin-left: 20px;
@@ -54,8 +53,7 @@
 }
 .social{
     align-self: flex-end;
-    margin-bottom: 20px;
-    
+    margin-bottom: 20px;    
 }
 .logo{
     align-self: center;
@@ -72,6 +70,8 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    flex-direction: row-reverse;
+    align-items: center;
 }
 .photo-grid-item{
     border: 1px solid #fff;
@@ -91,6 +91,7 @@
     background-color: #D6E9FE;
     height: 200px;
     flex: 1;
+    font-weight: bold;
 }
 .footer-one, .footer-three{
     background-color: #5995DA;
@@ -104,8 +105,6 @@
     align-items: center;
     display: flex;
     flex-wrap: wrap;
-    
-    
   }
    
   .carousel .carousel__item,
@@ -114,10 +113,9 @@
   }
    
   .carousel .carousel__item img {
-    width: 200%;
-    height: 200%;
-   
-    
+    width: 100%;
+    max-width: 300px;
+    height: auto;
   }
    
   .carousel .carousel__item--visible {
@@ -130,9 +128,7 @@
     width: 100%;
     justify-content: space-between;
     position: absolute;
-    top: 50%;
-    
-    
+    top: 50%; 
   }
    
   .carousel__actions button {
