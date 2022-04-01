@@ -13,7 +13,7 @@ function restoArrayMake(dataArray) {
     return dataArray[restNum];
   });
   console.log(listItems);
-  const targetList = document.querySelector('.resto-list');
+  const targetList = document.querySelector('#resto-list');
   targetList.innerHTML = '';
   listItems.forEach((item) => {
     const injectThisItem = `<li>${item.name}</li>`;
