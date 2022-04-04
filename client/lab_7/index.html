@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+    <head>
+        
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel = "stylesheet" href = "https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+        <link rel="stylesheet" href="styles.css">
+        
+
+    </head>
+
+    <body>
+
+        <div class="wrapper">
+
+            <div class="container">
+
+                <h1 class="header">
+            
+                    Aroub Halawani Lab 6
+                    
+                </h1>
+
+                <div class ="columns is-vcentered">
+
+                    <div class="box box-size">
+                        
+                        <form action="/api/foodServicesPG" method="get " class ="column is-narrow main_form">
+    
+                            <label for="name">First Name</label>
+                            <input type="text" name="name">
+        
+                            <label for="food-preference">Food Preference</label>
+                            <input type="text" name="food-preference">
+                            
+                            
+                            
+                            <div class ="form_item">
+
+                                <p>Vegie or Vegan?</p>
+
+                                <div class="control">
+                    
+                                    <label class="radio" for="answer" >
+                                
+                                        Yes
+                                        
+                                    </label>
+        
+                                    <input type="radio" name="answer" value="yes">
+                                    
+                                    <label class="radio" for="answer" >
+                                
+                                        No
+                                        
+                                    </label>
+        
+                                    <input type="radio" name="answer"value="no">
+        
+                                    
+                                </div>
+                            </div>
+
+                            <input type="submit" title="Submit" class="submitButton">
+    
+                        </form>
+                    </div>
+
+                    <div class=" column is-half ">
+                    
+                        <div class="box">
+                            
+                            <h3 id = "resto-list">This is going to be something in two weeks</h3>
+                    
+                        </div>
+                        
+                    </div>
+                </div>    
+            </div>
+        </div>
+        <script src="./script.js"></script>
+    </body>
+</html>
