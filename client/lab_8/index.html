@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lab 8 - JSON to Map Markers</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+        
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+            integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+            crossorigin=""
+        />
+
+
+        <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+            integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+            crossorigin="">
+        </script>
+        <link rel="stylesheet" href="styles.css"/>
+        
+
+    </head>
+
+    <body>
+
+        <div class="wrapper">
+
+            <div class="container">
+
+                <h1 class="header">
+            
+                    Aroub Halawani Lab 8
+                    
+                </h1>
+
+                <div class ="columns is-vcentered">
+
+                    <div class="box box-size">
+                        
+                        <form action="/api/foodServicesPG" method="get " class ="column is-narrow main_form">
+    
+                            
+                            <label class="label">Restaurant Name</label>
+                            <input class="input" type="text" id="resto_name">
+                                
+                              
+                            <label class="label">Zipcode</label>  
+                            <input class="input" type="text" id="zipcode">
+                                                              
+                            <input type="submit" title="Submit" class="submitButton">
+    
+                        </form>
+                    </div>
+
+                    <div class=" column is-half ">
+                    
+                        <div class="box">
+                            <div class="a">
+                                <div id="map"></div>
+                            </div>
+                            
+                            
+                    
+                        </div>
+                        <div class = "box">
+                            <h2>Restaurant List</h2>
+                            <ul id = "resto-list"></ul>
+                        </div>
+                        
+                    </div>
+                </div>    
+            </div>
+        </div>
+        <script src="./script.js"></script>
+    </body>
+</html>
